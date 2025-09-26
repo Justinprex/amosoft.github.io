@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xbox JTAG Case Study | Amosoft</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Fira Code", monospace;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
+      padding: 30px;
+      line-height: 1.6;
+    }
+    a {
+      color: #00ff99;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h1 { color: #ffcc00; }
+  </style>
+</head>
+<body>
+  <h1>Case Study: STM32 + Xbox JTAG</h1>
+  <p><strong>Date:</strong> September 25, 2025</p>
+
+  <p>
+    In this project, I investigated the integration of STM32 microcontrollers with the Xbox JTAG modification process. 
+    The focus was on analyzing how JTAG exploits interact with embedded systems and understanding how firmware-level 
+    modifications open the hardware for homebrew use.
+  </p>
+
+  <h2>Objectives</h2>
+  <ul>
+    <li>Reverse engineer STM32 firmware communication with Xbox hardware.</li>
+    <li>Document JTAG exploitation process.</li>
+    <li>Identify challenges and risks in the modding pipeline.</li>
+  </ul>
+
+  <h2>Tools Used</h2>
+  <ul>
+    <li>Ghidra & IDA Pro</li>
+    <li>STM32CubeProgrammer</li>
+    <li>JTAG/SWD Debuggers</li>
+  </ul>
+
+  <h2>Findings</h2>
+  <p>
+    The STM32 played a crucial role in bridging hardware signals during the JTAG exploit. 
+    Reverse engineering revealed undocumented registers and highlighted potential vulnerabilities 
+    in firmware validation checks.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    This project provided deeper insights into both embedded systems and console modding. 
+    It also laid the groundwork for further hardware/firmware exploit research.
+  </p>
+
+  <p><a href="index.html">← Back to Home</a></p>
+</body>
+</html>
