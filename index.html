@@ -12,3 +12,100 @@ title: Home
     </li>
   {% endfor %}
 </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amosoft Reverse Engineering Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Fira Code", monospace;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
+      display: flex;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: #1a1a1a;
+      height: 100vh;
+      padding: 20px;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.5);
+      position: fixed;
+    }
+    .sidebar h2 {
+      color: #00ff99;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+    .sidebar a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin: 10px 0;
+      transition: 0.2s;
+    }
+    .sidebar a:hover {
+      color: #00ff99;
+      margin-left: 5px;
+    }
+    /* Main content */
+    .content {
+      margin-left: 270px;
+      padding: 30px;
+      max-width: 900px;
+    }
+    .content h1 {
+      color: #00ff99;
+    }
+    .case-study {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #333;
+    }
+    .case-study h2 {
+      color: #ffcc00;
+    }
+    a.readmore {
+      color: #00ff99;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.readmore:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Amosoft</h2>
+    <a href="index.html">Home</a>
+    <a href="xbox-jtag.html">Xbox JTAG</a>
+    <a href="firmware-analysis.html">Firmware Analysis</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="content">
+    <h1>Reverse Engineering Portfolio</h1>
+    <p>Welcome to my portfolio of reverse engineering projects and writeups.</p>
+
+    <div class="case-study">
+      <h2>Case Study: STM32 + Xbox JTAG</h2>
+      <p>Date: September 25, 2025</p>
+      <p>Exploring the reverse engineering of STM32 microcontrollers and Xbox JTAG modifications.</p>
+      <a href="xbox-jtag.html" class="readmore">Read More →</a>
+    </div>
+
+    <div class="case-study">
+      <h2>Case Study: Firmware Analysis</h2>
+      <p>Date: October 2025</p>
+      <p>Analyzing proprietary firmware to understand protocols, encryption, and security flaws.</p>
+      <a href="firmware-analysis.html" class="readmore">Read More →</a>
+    </div>
+  </div>
+</body>
+</html>
