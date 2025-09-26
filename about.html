@@ -3,83 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Amosoft</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Fira Code", monospace;
-      background-color: #0d0d0d;
-      color: #e6e6e6;
-      display: flex;
-    }
-    .sidebar {
-      width: 250px;
-      background-color: #1a1a1a;
-      height: 100vh;
-      padding: 20px;
-      box-shadow: 2px 0 8px rgba(0,0,0,0.5);
-      position: fixed;
-    }
-    .sidebar h2 {
-      color: #00ff99;
-      font-size: 1.5em;
-      margin-bottom: 1em;
-    }
-    .sidebar a {
-      display: block;
-      color: #ccc;
-      text-decoration: none;
-      margin: 10px 0;
-      transition: 0.2s;
-    }
-    .sidebar a:hover {
-      color: #00ff99;
-      margin-left: 5px;
-    }
-    .content {
-      margin-left: 270px;
-      padding: 30px;
-      max-width: 900px;
-    }
-    h1 { color: #ffcc00; }
-  </style>
+  <title>About - Amosoft Reverse Engineering</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h2>Amosoft</h2>
-    <a href="index.html">Home</a>
-    <a href="xbox-jtag.html">Xbox JTAG</a>
-    <a href="firmware-analysis.html">Firmware Analysis</a>
-    <a href="about.html">About</a>
-  </div>
+  <!-- Header -->
+  <header>
+    <h1>Amosoft Tech 9</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="firmware-analysis.html">Firmware Analysis</a></li>
+        <li><a href="xbox-jtag.html">Xbox JTAG</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Main Content -->
-  <div class="content">
-    <h1>About Me</h1>
+  <!-- About Section -->
+  <main class="about">
+    <h2>About</h2>
     <p>
-      I am <strong>Amosoft</strong>, a developer and reverse engineer.  
-      My work focuses on exploring hardware, firmware, and software systems 
-      to uncover vulnerabilities, document hidden behaviors, and build tools 
-      for deeper technical understanding.
+      I am a reverse engineer specializing in embedded systems, firmware analysis, and low-level debugging. 
+      This site is a collection of my case studies, write-ups, and experiments across hardware and software reverse engineering. 
+      My focus is on practical demonstrations of techniques, and breaking down complex topics into clear, applicable steps.
     </p>
 
-    <h2>Skills</h2>
+    <p>
+      The goal of this portfolio is to showcase what can be achieved through methodical analysis of firmware, hardware protocols, and security implementations. 
+      I also aim to document lessons learned, methodologies, and useful tooling for other engineers and researchers.
+    </p>
+
+    <h3>Areas of Expertise</h3>
     <ul>
-      <li>Reverse Engineering (firmware, binaries, embedded systems)</li>
-      <li>Debugging & Disassembly (Ghidra, IDA Pro, Radare2)</li>
-      <li>Hardware Analysis (JTAG, UART, SWD, PCB inspection)</li>
-      <li>Exploit Development & Security Research</li>
-      <li>Web & Software Development</li>
+      <li>Firmware reverse engineering (ARM Cortex, MIPS, x86)</li>
+      <li>Debugging and protocol analysis (SWD, JTAG, UART, SPI, I²C)</li>
+      <li>Binary analysis, disassembly, and decompilation (Ghidra, IDA Pro, Radare2)</li>
+      <li>Exploit research and vulnerability discovery in embedded devices</li>
     </ul>
 
-    <h2>Contact</h2>
-    <p>You can reach me via:</p>
+    <h3>Professional Engagements</h3>
+    <p>
+      I provide consulting and training for organizations and individuals who want to strengthen their capabilities in reverse engineering and firmware security. 
+      This includes hands-on instruction, project-based collaboration, and technical reviews of embedded systems.
+    </p>
+
+    <h3>Selected Talks & Contributions</h3>
     <ul>
-      <li>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></li>
-      <li>GitHub: <a href="https://github.com/Justinprex" target="_blank">github.com/Justinprex</a></li>
-      <li>Twitter/X: <a href="https://x.com/yourhandle" target="_blank">@yourhandle</a></li>
+      <li><strong>2025:</strong> Workshop on firmware unpacking and cryptographic protocol analysis (private training)</li>
+      <li><strong>2024:</strong> Internal seminar on JTAG/UART exploitation in consumer devices</li>
+      <li><strong>2023:</strong> Guest contributor to open-source tooling for memory analysis and dump automation</li>
     </ul>
-  </div>
+
+    <h3>Contact</h3>
+    <p>
+      For consulting, collaboration, or inquiries about my work, please reach out via the contact information on the main page.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Amosoft. All rights reserved.</p>
+  </footer>
 </body>
 </html>
