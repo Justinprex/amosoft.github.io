@@ -1,0 +1,14 @@
+---
+layout: default
+title: Home
+---
+<h1>Amosoft Reverse Engineering Portfolio</h1>
+<p>Welcome to my portfolio of reverse engineering projects and writeups.</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - <small>{{ post.date | date: "%B %d, %Y" }}</small>
+    </li>
+  {% endfor %}
+</ul>
