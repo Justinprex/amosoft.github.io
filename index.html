@@ -3,49 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amosoft Portfolio</title>
+  <title>Amosoft RE Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Amosoft Tech 9</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="firmware-analysis.html">Firmware Analysis</a></li>
-        <li><a href="xbox-jtag.html">Xbox JTAG</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Hardware / Software Reverse Engineering</h2>
-    <p>Exploring firmware, hardware debugging, and system analysis.</p>
-  </section>
+  <div class="sidebar">
+    <h2>Amosoft</h2>
+    <a href="index.html">Home</a>
+    <a href="xbox-jtag.html">Xbox JTAG</a>
+    <a href="firmware-analysis.html">Firmware Analysis</a>
+    <a href="about.html">About</a>
+  </div>
 
-  <!-- Posts Section -->
-  <section class="posts">
-    <h2>Posts</h2>
-    <ul>
-      <li>
-        <a href="posts/stm32-jtag.html">Writing a GHIDRA Loader: STM32 Edition</a> 
-        <span class="date">Feb 20, 2020</span>
-        <p>Dumping firmware off an Xbox One controller using SWD...</p>
-      </li>
-      <li>
-        <a href="posts/xbox-swd.html">Hardware Debugging with SWD</a> 
-        <span class="date">Jan 29, 2020</span>
-        <p>Exploring OpenOCD, SWD, and Xbox One Controller firmware dumps...</p>
-      </li>
-    </ul>
-  </section>
+  <div class="content">
+    <h1>Reverse Engineering Portfolio</h1>
+    <p>Welcome to my portfolio of reverse engineering projects and writeups.  
+       I document case studies on microcontrollers, firmware, and hardware-level security.</p>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Amosoft. All rights reserved.</p>
-  </footer>
+    <h2>Featured Case Studies</h2>
+
+    <div class="case-study">
+      <h3><a href="xbox-jtag.html">STM32 + Xbox JTAG</a></h3>
+      <p><strong>Date:</strong> September 25, 2025</p>
+      <p>Exploring STM32 microcontrollers and Xbox JTAG modifications.  
+         Focused on debugging protocols, bootloaders, and hardware bypasses.</p>
+    </div>
+
+    <div class="case-study">
+      <h3><a href="firmware-analysis.html">Firmware Analysis</a></h3>
+      <p><strong>Date:</strong> October 2025</p>
+      <p>Analyzing proprietary firmware to uncover communication protocols,  
+         encryption methods, and potential security flaws.</p>
+    </div>
+  </div>
+
 </body>
 </html>
