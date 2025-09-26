@@ -7,33 +7,92 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sidebar -->
+
+  <!-- Sidebar Navigation -->
   <div class="sidebar">
     <h2>Amosoft</h2>
-    <a href="index.html">Home</a>
-    <a href="xbox-jtag.html">Xbox JTAG</a>
-    <a href="firmware-analysis.html">Firmware Analysis</a>
-    <a href="about.html">About</a>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#xbox">Xbox JTAG</a>
+    <a href="#firmware">Firmware Analysis</a>
+    <a href="#about">About</a>
   </div>
 
-  <!-- Main content -->
+  <!-- Main Content -->
   <div class="content">
-    <h1>Amosoft Reverse Engineering Portfolio</h1>
-    <p>Welcome to my portfolio of reverse engineering projects and writeups.</p>
 
-    <div class="case-study">
-      <h2>Case Study: STM32 + Xbox JTAG</h2>
-      <p><strong>Date:</strong> September 25, 2025</p>
-      <p>Exploring the reverse engineering of STM32 microcontrollers and Xbox JTAG modifications.</p>
-      <a href="xbox-jtag.html" class="readmore">Read More →</a>
-    </div>
+    <!-- Home Section -->
+    <section id="home">
+      <h1>Reverse Engineering Portfolio</h1>
+      <p>Welcome to my portfolio of reverse engineering projects and writeups.  
+      I specialize in analyzing microcontrollers, firmware, and console mods.  
+      This site documents my case studies, techniques, and findings.</p>
+    </section>
 
-    <div class="case-study">
-      <h2>Case Study: Firmware Analysis</h2>
-      <p><strong>Date:</strong> October 2025</p>
-      <p>Analyzing proprietary firmware to understand protocols, encryption, and security flaws.</p>
-      <a href="firmware-analysis.html" class="readmore">Read More →</a>
-    </div>
-  </div>
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Featured Case Studies</h2>
+
+      <!-- Case Study 1 -->
+      <div class="case-study" id="xbox">
+        <h2>Case Study: STM32 + Xbox JTAG</h2>
+        <p><strong>Date:</strong> September 25, 2025</p>
+        <p>Exploring the reverse engineering of STM32 microcontrollers  
+        and Xbox JTAG modifications. Focused on debugging protocols,  
+        bootloaders, and hardware bypasses.</p>
+        <a href="#xbox-details" class="readmore">Read More →</a>
+      </div>
+
+      <!-- Case Study 2 -->
+      <div class="case-study" id="firmware">
+        <h2>Case Study: Firmware Analysis</h2>
+        <p><strong>Date:</strong> October 2025</p>
+        <p>Analyzing proprietary firmware to uncover communication protocols,  
+        encryption methods, and potential security flaws. Tools used:  
+        <code>Ghidra</code>, <code>Binwalk</code>, <code>Radare2</code>.</p>
+        <a href="#firmware-details" class="readmore">Read More →</a>
+      </div>
+    </section>
+
+    <!-- Xbox JTAG Detailed Section -->
+    <section id="xbox-details">
+      <h2>Deep Dive: STM32 + Xbox JTAG</h2>
+      <p>The STM32 was interfaced with the Xbox JTAG to reverse engineer  
+      memory access and instruction hooks. Key steps included:</p>
+      <ul>
+        <li>Dumping flash memory via SWD interface.</li>
+        <li>Disassembling boot ROM with <code>Ghidra</code>.</li>
+        <li>Bypassing signature checks for custom payload execution.</li>
+      </ul>
+      <p>Result: Successful modification and deeper understanding of the  
+      console security layers.</p>
+    </section>
+
+    <!-- Firmware Analysis Detailed Section -->
+    <section id="firmware-details">
+      <h2>Deep Dive: Firmware Analysis</h2>
+      <p>This project focused on understanding a closed-source device firmware.  
+      Highlights included:</p>
+      <ul>
+        <li>Extracting the filesystem with <code>binwalk</code>.</li>
+        <li>Identifying hardcoded keys inside the binary.</li>
+        <li>Tracing communication protocols with <code>Wireshark</code>.</li>
+      </ul>
+      <p>Outcome: Security flaws were documented for responsible disclosure.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am Amosoft, a reverse engineer and developer.  
+      My focus is on microcontrollers, firmware research,  
+      and hardware-level security bypasses.</p>
+      <p>This portfolio is a living collection of my case studies,  
+      documenting methodologies, findings, and technical details  
+      in the field of reverse engineering.</p>
+    </section>
+
+  </div><!-- End Content -->
+
 </body>
 </html>
