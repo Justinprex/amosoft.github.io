@@ -1,0 +1,1 @@
+# amosoft.github.io
