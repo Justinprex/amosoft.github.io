@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firmware Analysis Case Study | Amosoft</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Fira Code", monospace;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
+      padding: 30px;
+      line-height: 1.6;
+    }
+    a {
+      color: #00ff99;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h1 { color: #ffcc00; }
+  </style>
+</head>
+<body>
+  <h1>Case Study: Firmware Analysis</h1>
+  <p><strong>Date:</strong> October 2025</p>
+
+  <p>
+    This project involved analyzing proprietary firmware from an embedded device to uncover 
+    security flaws, undocumented features, and communication protocols.
+  </p>
+
+  <h2>Objectives</h2>
+  <ul>
+    <li>Disassemble and reverse engineer binary firmware images.</li>
+    <li>Map undocumented system calls and APIs.</li>
+    <li>Identify cryptographic weaknesses and debug protections.</li>
+  </ul>
+
+  <h2>Tools Used</h2>
+  <ul>
+    <li>Binwalk</li>
+    <li>Radare2</li>
+    <li>Ghidra</li>
+    <li>Custom Python scripts</li>
+  </ul>
+
+  <h2>Findings</h2>
+  <p>
+    Analysis revealed weak encryption handling and unsafe memory routines, 
+    making the system vulnerable to code injection. A hidden debug menu 
+    was also identified by reverse engineering string references.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    Firmware analysis highlighted critical oversights in system security, 
+    which can inform mitigation strategies and help vendors strengthen 
+    their products.
+  </p>
+
+  <p><a href="index.html">← Back to Home</a></p>
+</body>
+</html>
